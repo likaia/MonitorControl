@@ -13,6 +13,28 @@ class SliderHandler {
   let command: Command
   var icon: ClickThroughImageView?
 
+  final class MenuSliderRowView: NSView {
+    private let rowSize: NSSize
+
+    init(size: NSSize) {
+      self.rowSize = size
+      super.init(frame: NSRect(origin: .zero, size: size))
+    }
+
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+      nil
+    }
+
+    override var intrinsicContentSize: NSSize {
+      self.rowSize
+    }
+
+    override var fittingSize: NSSize {
+      self.rowSize
+    }
+  }
+
   class MCSliderCell: NSSliderCell {
     let knobFillColor = NSColor(white: 1, alpha: 1)
     let knobFillColorTracking = NSColor(white: 0.8, alpha: 1)
@@ -138,7 +160,43 @@ class SliderHandler {
     }
   }
 
+  class MCSystemSliderCell: NSSliderCell {
+    override func startTracking(at startPoint: NSPoint, in controlView: NSView) -> Bool {
+      let didStart = super.startTracking(at: startPoint, in: controlView)
+      if let slider = controlView as? MCSlider {
+        slider.interactionHandler?(slider)
+      }
+      return didStart
+    }
+
+    override func continueTracking(last lastPoint: NSPoint, current currentPoint: NSPoint, in controlView: NSView) -> Bool {
+      let shouldContinue = super.continueTracking(last: lastPoint, current: currentPoint, in: controlView)
+      if let slider = controlView as? MCSlider {
+        slider.interactionHandler?(slider)
+      }
+      return shouldContinue
+    }
+
+    override func stopTracking(last lastPoint: NSPoint, current stopPoint: NSPoint, in controlView: NSView, mouseIsUp flag: Bool) {
+      super.stopTracking(last: lastPoint, current: stopPoint, in: controlView, mouseIsUp: flag)
+      if let slider = controlView as? MCSlider {
+        slider.interactionHandler?(slider)
+      }
+    }
+  }
+
   class MCSlider: NSSlider {
+    var usesSystemRendering = false {
+      didSet {
+        if self.usesSystemRendering {
+          self.cell = MCSystemSliderCell()
+        } else if !(self.cell is MCSliderCell) {
+          self.cell = MCSliderCell()
+        }
+      }
+    }
+    var interactionHandler: ((MCSlider) -> Void)?
+
     required init?(coder: NSCoder) {
       super.init(coder: coder)
     }
@@ -198,6 +256,7 @@ class SliderHandler {
       let increment = range * delta / 100
       let value = self.floatValue + increment
       self.floatValue = value
+      self.interactionHandler?(self)
       self.sendAction(self.action, to: self.target)
     }
   }
@@ -215,9 +274,98 @@ class SliderHandler {
     let slider = SliderHandler.MCSlider(value: 0, minValue: 0, maxValue: 1, target: self, action: #selector(SliderHandler.valueChanged))
     let showPercent = prefs.bool(forKey: PrefKey.enableSliderPercent.rawValue)
     slider.isEnabled = true
+    slider.isContinuous = true
+    slider.target = self
+    slider.action = #selector(SliderHandler.valueChanged(slider:))
+    slider.interactionHandler = { [weak self] sender in
+      self?.valueChanged(slider: sender)
+    }
+    _ = slider.sendAction(on: [.leftMouseDragged, .leftMouseUp])
     slider.setNumOfCustomTickmarks(prefs.bool(forKey: PrefKey.showTickMarks.rawValue) ? 5 : 0)
     self.slider = slider
-    if !DEBUG_MACOS10, #available(macOS 11.0, *) {
+    if #available(macOS 26.0, *), !DEBUG_MACOS10 {
+      slider.usesSystemRendering = true
+      slider.controlSize = .regular
+      slider.translatesAutoresizingMaskIntoConstraints = false
+
+      let rowSize = NSSize(width: showPercent ? 360 : 318, height: 30)
+      let rowView = MenuSliderRowView(size: rowSize)
+      rowView.translatesAutoresizingMaskIntoConstraints = false
+
+      let icon = SliderHandler.ClickThroughImageView()
+      icon.translatesAutoresizingMaskIntoConstraints = false
+      icon.symbolConfiguration = NSImage.SymbolConfiguration(pointSize: 16, weight: .medium)
+      icon.imageScaling = .scaleProportionallyUpOrDown
+
+      var iconName = "circle.dashed"
+      switch command {
+      case .audioSpeakerVolume: iconName = "speaker.wave.2.fill"
+      case .brightness: iconName = "sun.max.fill"
+      case .contrast: iconName = "circle.lefthalf.fill"
+      default: break
+      }
+      icon.image = NSImage(systemSymbolName: iconName, accessibilityDescription: title)
+      icon.contentTintColor = NSColor.secondaryLabelColor
+      self.icon = icon
+
+      let sliderContainer = NSView()
+      sliderContainer.translatesAutoresizingMaskIntoConstraints = false
+      sliderContainer.addSubview(slider)
+
+      let percentageBox: NSTextField?
+      if showPercent {
+        let box = NSTextField(labelWithString: "0%")
+        box.translatesAutoresizingMaskIntoConstraints = false
+        self.setupPercentageBox(box)
+        box.font = NSFont.monospacedDigitSystemFont(ofSize: 14, weight: .semibold)
+        box.textColor = NSColor.secondaryLabelColor
+        self.percentageBox = box
+        percentageBox = box
+      } else {
+        percentageBox = nil
+      }
+
+      let stack = NSStackView()
+      stack.translatesAutoresizingMaskIntoConstraints = false
+      stack.orientation = .horizontal
+      stack.alignment = .centerY
+      stack.spacing = 10
+      stack.edgeInsets = NSEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+      stack.addArrangedSubview(icon)
+      stack.addArrangedSubview(sliderContainer)
+      if let percentageBox {
+        stack.addArrangedSubview(percentageBox)
+      }
+      rowView.addSubview(stack)
+
+      NSLayoutConstraint.activate([
+        rowView.widthAnchor.constraint(equalToConstant: rowSize.width),
+        rowView.heightAnchor.constraint(equalToConstant: rowSize.height),
+
+        stack.leadingAnchor.constraint(equalTo: rowView.leadingAnchor),
+        stack.trailingAnchor.constraint(equalTo: rowView.trailingAnchor),
+        stack.topAnchor.constraint(equalTo: rowView.topAnchor),
+        stack.bottomAnchor.constraint(equalTo: rowView.bottomAnchor),
+
+        icon.widthAnchor.constraint(equalToConstant: 16),
+        icon.heightAnchor.constraint(equalToConstant: 16),
+
+        sliderContainer.heightAnchor.constraint(equalToConstant: 22),
+        slider.heightAnchor.constraint(equalToConstant: 20),
+        slider.leadingAnchor.constraint(equalTo: sliderContainer.leadingAnchor),
+        slider.trailingAnchor.constraint(equalTo: sliderContainer.trailingAnchor),
+        slider.centerYAnchor.constraint(equalTo: sliderContainer.centerYAnchor),
+      ])
+
+      if let percentageBox {
+        NSLayoutConstraint.activate([
+          percentageBox.widthAnchor.constraint(equalToConstant: 46),
+        ])
+      }
+
+      rowView.layoutSubtreeIfNeeded()
+      self.view = rowView
+    } else if !DEBUG_MACOS10, #available(macOS 11.0, *) {
       slider.frame.size.width = 180
       slider.frame.origin = NSPoint(x: 15, y: 5)
       let view = NSView(frame: NSRect(x: 0, y: 0, width: slider.frame.width + 30 + (showPercent ? 38 : 0), height: slider.frame.height + 14))

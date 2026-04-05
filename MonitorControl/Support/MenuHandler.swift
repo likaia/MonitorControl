@@ -53,7 +53,15 @@ class MenuHandler: NSMenu, NSMenuDelegate {
       displays.append(contentsOf: DisplayManager.shared.getAppleDisplays())
     }
     displays.append(contentsOf: DisplayManager.shared.getOtherDisplays())
-    displays = DisplayManager.shared.sortDisplaysByFriendlyName()
+    displays = displays.sorted { lhs, rhs in
+      let lhsTitle = lhs.readPrefAsString(key: .friendlyName).isEmpty
+        ? lhs.name
+        : lhs.readPrefAsString(key: .friendlyName)
+      let rhsTitle = rhs.readPrefAsString(key: .friendlyName).isEmpty
+        ? rhs.name
+        : rhs.readPrefAsString(key: .friendlyName)
+      return lhsTitle.localizedStandardCompare(rhsTitle) == .orderedDescending
+    }
     let relevant = prefs.integer(forKey: PrefKey.multiSliders.rawValue) == MultiSliders.relevant.rawValue
     let combine = prefs.integer(forKey: PrefKey.multiSliders.rawValue) == MultiSliders.combine.rawValue
     let numOfDisplays = displays.filter { !$0.isDummy }.count
@@ -102,7 +110,15 @@ class MenuHandler: NSMenu, NSMenuDelegate {
   }
 
   func addDisplayMenuBlock(addedSliderHandlers: [SliderHandler], blockName: String, monitorSubMenu: NSMenu, numOfDisplays: Int, asSubMenu: Bool) {
-    if numOfDisplays > 1, prefs.integer(forKey: PrefKey.multiSliders.rawValue) != MultiSliders.relevant.rawValue, !DEBUG_MACOS10, #available(macOS 11.0, *) {
+    if #available(macOS 26.0, *), !asSubMenu, prefs.integer(forKey: PrefKey.multiSliders.rawValue) != MultiSliders.relevant.rawValue, addedSliderHandlers.count > 0 {
+      let item = NSMenuItem()
+      item.view = MenuDisplayGlassBlockView(
+        title: blockName,
+        sliderViews: addedSliderHandlers.compactMap(\.view)
+      )
+      monitorSubMenu.insertItem(item, at: 0)
+      return
+    } else if numOfDisplays > 1, prefs.integer(forKey: PrefKey.multiSliders.rawValue) != MultiSliders.relevant.rawValue, !DEBUG_MACOS10, #available(macOS 11.0, *) {
       class BlockView: NSView {
         override func draw(_: NSRect) {
           let radius = prefs.bool(forKey: PrefKey.showTickMarks.rawValue) ? CGFloat(4) : CGFloat(11)
@@ -289,5 +305,113 @@ class MenuHandler: NSMenu, NSMenuDelegate {
       self.insertItem(updateItem, at: self.items.count)
       self.insertItem(withTitle: NSLocalizedString("Quit", comment: "Shown in menu"), action: #selector(app.quitClicked), keyEquivalent: "q", at: self.items.count)
     }
+  }
+}
+
+@available(macOS 26.0, *)
+private final class MenuDisplayGlassBlockView: NSView {
+  private let cardWidth = CGFloat(420)
+  private let containerView = NSGlassEffectContainerView()
+  private let glassView = NSGlassEffectView()
+  private let titleLabel: NSTextField
+  private let contentStack = NSStackView()
+  private let strokeLayer = CAShapeLayer()
+  private let shadowLayer = CAShapeLayer()
+
+  init(title: String, sliderViews: [NSView]) {
+    self.titleLabel = NSTextField(labelWithString: title)
+    let sliderHeight = sliderViews.reduce(CGFloat(0)) { partialResult, sliderView in
+      partialResult + max(sliderView.fittingSize.height, sliderView.frame.height)
+    }
+    let titleHeight = title.isEmpty ? CGFloat(0) : CGFloat(20)
+    let visibleViewCount = sliderViews.count + (title.isEmpty ? 0 : 1)
+    let contentHeight = 18 + titleHeight + sliderHeight + CGFloat(max(0, visibleViewCount - 1)) * 8 + 16
+    let totalHeight = max(90, contentHeight + 12)
+
+    super.init(frame: NSRect(x: 0, y: 0, width: self.cardWidth, height: totalHeight))
+
+    self.wantsLayer = true
+
+    self.shadowLayer.fillColor = NSColor.black.withAlphaComponent(0.18).cgColor
+    self.shadowLayer.shadowColor = NSColor.black.cgColor
+    self.shadowLayer.shadowOpacity = 0.20
+    self.shadowLayer.shadowRadius = 12
+    self.shadowLayer.shadowOffset = CGSize(width: 0, height: -5)
+    self.layer?.addSublayer(self.shadowLayer)
+
+    self.containerView.translatesAutoresizingMaskIntoConstraints = false
+    self.containerView.spacing = 0
+
+    self.glassView.translatesAutoresizingMaskIntoConstraints = false
+    self.glassView.style = .regular
+    self.glassView.tintColor = NSColor.controlAccentColor.withAlphaComponent(0.10)
+    self.containerView.contentView = self.glassView
+
+    self.glassView.wantsLayer = true
+    self.strokeLayer.fillColor = NSColor.clear.cgColor
+    self.strokeLayer.strokeColor = NSColor.white.withAlphaComponent(0.22).cgColor
+    self.strokeLayer.lineWidth = 1
+    self.glassView.layer?.addSublayer(self.strokeLayer)
+
+    self.titleLabel.translatesAutoresizingMaskIntoConstraints = false
+    self.titleLabel.font = NSFont.systemFont(ofSize: 15, weight: .semibold)
+    self.titleLabel.textColor = NSColor.labelColor
+
+    self.contentStack.translatesAutoresizingMaskIntoConstraints = false
+    self.contentStack.orientation = .vertical
+    self.contentStack.alignment = .leading
+    self.contentStack.spacing = 8
+    self.contentStack.edgeInsets = NSEdgeInsets(top: 18, left: 20, bottom: 16, right: 20)
+    self.contentStack.addArrangedSubview(self.titleLabel)
+    sliderViews.forEach { self.contentStack.addArrangedSubview($0) }
+
+    self.glassView.contentView = self.contentStack
+    self.addSubview(self.containerView)
+
+    NSLayoutConstraint.activate([
+      self.containerView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+      self.containerView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -10),
+      self.containerView.topAnchor.constraint(equalTo: self.topAnchor, constant: 6),
+      self.containerView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -6),
+      self.widthAnchor.constraint(equalToConstant: self.cardWidth),
+    ])
+
+    self.layoutSubtreeIfNeeded()
+  }
+
+  @available(*, unavailable)
+  required init?(coder: NSCoder) {
+    nil
+  }
+
+  override var fittingSize: NSSize {
+    let contentHeight = self.contentStack.fittingSize.height
+    return NSSize(width: self.cardWidth, height: max(90, contentHeight + 12))
+  }
+
+  override var intrinsicContentSize: NSSize {
+    self.fittingSize
+  }
+
+  override func layout() {
+    super.layout()
+
+    let cardFrame = self.bounds.insetBy(dx: 10, dy: 6)
+    let cornerRadius = min(22, cardFrame.height / 2.6)
+    self.glassView.cornerRadius = cornerRadius
+
+    self.shadowLayer.path = CGPath(
+      roundedRect: cardFrame.insetBy(dx: 2, dy: 2),
+      cornerWidth: cornerRadius,
+      cornerHeight: cornerRadius,
+      transform: nil
+    )
+    self.strokeLayer.frame = self.glassView.bounds
+    self.strokeLayer.path = CGPath(
+      roundedRect: self.glassView.bounds.insetBy(dx: 0.5, dy: 0.5),
+      cornerWidth: max(0, cornerRadius - 0.5),
+      cornerHeight: max(0, cornerRadius - 0.5),
+      transform: nil
+    )
   }
 }
