@@ -43,6 +43,21 @@ if [[ "${ARCHIVE_PATH##*.}" != "zip" ]]; then
   fail "Sparkle appcast generation expects a .zip archive, not $(basename "$ARCHIVE_PATH")."
 fi
 
+if ! command -v unzip >/dev/null 2>&1; then
+  fail "The 'unzip' command is required to inspect the archive contents."
+fi
+
+ZIP_LISTING="$(unzip -Z1 "$ARCHIVE_PATH")"
+APP_ENTRY="$(printf '%s\n' "$ZIP_LISTING" | grep -E '(^|/)[^/]+\.app/?$' | head -n 1 || true)"
+DMG_ENTRY="$(printf '%s\n' "$ZIP_LISTING" | grep -E '(^|/)[^/]+\.dmg$' | head -n 1 || true)"
+
+if [[ -z "$APP_ENTRY" ]]; then
+  if [[ -n "$DMG_ENTRY" ]]; then
+    fail "The zip contains '$DMG_ENTRY', but Sparkle needs a zip that contains LumaGlass.app directly. Please zip the .app, not the .dmg."
+  fi
+  fail "The zip does not contain a .app bundle. Sparkle needs a zip that contains LumaGlass.app."
+fi
+
 SPARKLE_BIN_DIR="$(find "$HOME/Library/Developer/Xcode/DerivedData" -path '*/SourcePackages/artifacts/sparkle/Sparkle/bin' -type d | head -n 1)"
 
 if [[ -z "$SPARKLE_BIN_DIR" ]]; then
@@ -80,3 +95,7 @@ echo "Next:"
 echo "1. Commit and push appcast.xml"
 echo "2. Create the GitHub release tag v${VERSION}"
 echo "3. Upload the archive asset named ${ARCHIVE_NAME}"
+echo ""
+echo "Tip:"
+echo "Create the Sparkle zip from LumaGlass.app itself, for example:"
+echo "  ditto -c -k --keepParent \"/path/to/LumaGlass.app\" \"/path/to/LumaGlass-${VERSION}.zip\""

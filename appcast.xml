@@ -1,15 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-  <channel>
-    <title>LumaGlass Updates</title>
-    <description>Release feed for LumaGlass.</description>
-    <language>en</language>
-    <item>
-      <title>LumaGlass 1.1.0</title>
-      <link>https://github.com/likaia/MonitorControl/releases/tag/v1.1.0</link>
-      <sparkle:version>7171</sparkle:version>
-      <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
-      <pubDate>Sun, 05 Apr 2026 15:38:32 +0000</pubDate>
-    </item>
-  </channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>LumaGlass Updates</title>
+        <description>Release feed for LumaGlass.</description>
+        <language>en</language>
+        <item>
+            <title>1.1.0</title>
+            <pubDate>Sun, 05 Apr 2026 23:54:52 +0800</pubDate>
+            <link>https://github.com/likaia/MonitorControl/releases/tag/v1.1.0</link>
+            <sparkle:fullReleaseNotesLink>https://github.com/likaia/MonitorControl/releases/tag/v1.1.0</sparkle:fullReleaseNotesLink>
+            <sparkle:version>7175</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>10.14</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/likaia/MonitorControl/releases/download/v1.1.0/LumaGlass-1.1.0.zip" length="22859731" type="application/octet-stream" sparkle:edSignature="lP94tWSZiUuVFNB3QcI+2lwhxLqJlwTkHYig5uOLV2KNmHSzV9YafI5QU7ffJBEU9NllH109a0/OFIdPWlZaCQ=="/>
+        </item>
+        <item>
+            <title>LumaGlass 1.1.0</title>
+            <link>https://github.com/likaia/MonitorControl/releases/tag/v1.1.0</link>
+            <sparkle:version>7171</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <pubDate>Sun, 05 Apr 2026 15:38:32 +0000</pubDate>
+        </item>
+    </channel>
 </rss>
