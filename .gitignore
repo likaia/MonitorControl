@@ -4671,6 +4671,12 @@ inc/
 !/jobs
 !/.gitignore
 !/*.xml
+!/README.zh-CN.md
+!/RELEASE_TEMPLATE.md
+!/BUILD_GUIDE.zh-CN.md
+!/set-version.sh
+!/dmg-background-1200x720.png
+!/CUSTOM_BRIGHTNESS_HUD_PLAN.md
 
 # Ignore all files in jobs subdirectories except for folders.
 # Note: git doesn't track folders, only file content.
@@ -7368,4 +7374,3 @@ tags
 # Ignore build outputs from performing a nix-build or `nix build` command
 result
 result-*
-
