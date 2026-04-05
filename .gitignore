@@ -4675,6 +4675,7 @@ inc/
 !/RELEASE_TEMPLATE.md
 !/BUILD_GUIDE.zh-CN.md
 !/set-version.sh
+!/generate-appcast.sh
 !/dmg-background-1200x720.png
 !/CUSTOM_BRIGHTNESS_HUD_PLAN.md
 
@@ -4901,6 +4902,7 @@ fp-info-cache
 
 # Exported BOM files
 *.xml
+!/appcast.xml
 *.csv
 
 ### Swift template

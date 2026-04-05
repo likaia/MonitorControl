@@ -1978,7 +1978,7 @@
                                 </textFieldCell>
                             </textField>
                             <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="Dqc-RQ-Lbc">
-                                <rect key="frame" x="247" y="32" width="227" height="16"/>
+                                <rect key="frame" x="247" y="96" width="227" height="16"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="#bc-ignore!" id="e0q-fb-k7R">
                                     <font key="font" metaFont="system"/>
@@ -2000,7 +2000,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </box>
                             <box verticalHuggingPriority="750" fixedFrame="YES" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="JqO-vB-ykl">
-                                <rect key="frame" x="249" y="62" width="420" height="4"/>
+                                <rect key="frame" x="249" y="126" width="420" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </box>
                             <imageView identifier="appIcon" wantsLayer="YES" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="qQ1-AF-le8">
@@ -2019,20 +2019,8 @@
                                     <action selector="checkForUpdatesWithSender:" target="7uI-eE-yxm" id="Z7G-jz-0xK"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" id="rqH-BW-IT6">
-                                <rect key="frame" x="249" y="165" width="420" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="bevel" title="Special thanks to our contributors!" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="95V-M4-2l5">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <color key="contentTintColor" name="linkColor" catalog="System" colorSpace="catalog"/>
-                                <connections>
-                                    <action selector="openContributorsPage:" target="7uI-eE-yxm" id="YbP-4y-EPf"/>
-                                </connections>
-                            </button>
                             <button verticalHuggingPriority="750" id="vS5-oh-3k6">
-                                <rect key="frame" x="476" y="23" width="200" height="32"/>
+                                <rect key="frame" x="476" y="87" width="200" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Donate" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZKk-ve-rS4">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -2040,21 +2028,6 @@
                                 </buttonCell>
                                 <connections>
                                     <action selector="openDonate:" target="7uI-eE-yxm" id="vXV-ri-tCT"/>
-                                </connections>
-                            </button>
-                            <button verticalHuggingPriority="750" id="W2f-KE-6PO">
-                                <rect key="frame" x="249" y="138" width="420" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="bevel" title="https://monitorcontrol.app" bezelStyle="rounded" alignment="left" imageScaling="proportionallyDown" inset="2" id="42n-Zy-AqF">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                    <attributedString key="userComments">
-                                        <fragment content="#bc-ignore!"/>
-                                    </attributedString>
-                                </buttonCell>
-                                <color key="contentTintColor" name="linkColor" catalog="System" colorSpace="catalog"/>
-                                <connections>
-                                    <action selector="openWebPage:" target="7uI-eE-yxm" id="gcQ-jk-gBN"/>
                                 </connections>
                             </button>
                         </subviews>

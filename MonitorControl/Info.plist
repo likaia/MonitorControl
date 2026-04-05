@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>7168</string>
+	<string>7173</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.utilities</string>
 	<key>LSMinimumSystemVersion</key>
@@ -33,8 +33,8 @@
 	<key>SUEnableJavaScript</key>
 	<true/>
 	<key>SUFeedURL</key>
-	<string>https://monitorcontrol.app/appcast2.xml</string>
+	<string>https://raw.githubusercontent.com/likaia/MonitorControl/main/appcast.xml</string>
 	<key>SUPublicEDKey</key>
-	<string>ITSTMp8AypsLawojJ+UR3tm2mN18AFoNMvXf1G3t62s=</string>
+	<string>ZY0de2emYJewg5m+1QLCVi3US/FEkXr7MWqJDbzzIbo=</string>
 </dict>
 </plist>

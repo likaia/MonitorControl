@@ -99,7 +99,47 @@ hdiutil create \
 
 如果你后面要进一步做美化版 DMG，可以在制作窗口布局时使用这张图。
 
-## 7. 常见问题
+## 7. 生成自动更新 feed
+
+`LumaGlass` 现在使用 `Sparkle` 检查更新，更新源是仓库根目录的：
+
+[appcast.xml](/Users/likai/Documents/apple-project/MonitorControl/appcast.xml)
+
+注意：
+
+- `Sparkle` 自动更新建议使用 `.zip` 包，不是 `.dmg`
+- 也就是说，你可以继续对外发布 `.dmg` 给用户手动安装
+- 但真正给应用内“检查更新”使用的，应该是上传到 GitHub Release 的 `.zip`
+
+项目根目录已经提供生成脚本：
+
+[generate-appcast.sh](/Users/likai/Documents/apple-project/MonitorControl/generate-appcast.sh)
+
+使用方法：
+
+```sh
+./generate-appcast.sh 1.1.0 /你的路径/LumaGlass-1.1.0.zip
+```
+
+这个脚本会：
+
+- 使用你本机 Keychain 里的 `LumaGlass` Sparkle 签名密钥
+- 根据 zip 包生成新的 `appcast.xml`
+- 将下载地址指向 GitHub Release 的：
+  `https://github.com/likaia/MonitorControl/releases/download/v版本号/文件名.zip`
+
+建议流程：
+
+1. 先准备好签名后的 `LumaGlass.app`
+2. 将它压缩成 `LumaGlass-x.y.z.zip`
+3. 运行 `./generate-appcast.sh x.y.z /path/to/LumaGlass-x.y.z.zip`
+4. 提交并推送更新后的 `appcast.xml`
+5. 创建 GitHub Release `vx.y.z`
+6. 上传同名 zip 资产
+
+只要 GitHub Release 里的 zip 文件名和你生成 appcast 时用的文件名一致，应用内检查更新就能对上。
+
+## 8. 常见问题
 
 ### 依赖解析失败
 
@@ -137,13 +177,16 @@ hdiutil create \
 
 这是项目里的构建脚本行为，属于正常现象。它会自动递增 build number，不影响你手动设置的 `MARKETING_VERSION`。
 
-## 8. 推荐流程
+## 9. 推荐流程
 
 每次正式发版，建议按这个顺序操作：
 
 1. 运行 `./set-version.sh x.y.z`
 2. 在 Xcode 中执行 `Archive`
 3. 从 `Organizer` 导出 `.app`
-4. 用 `hdiutil` 打包 `.dmg`
-5. 上传到 GitHub Releases
-6. 参考 [RELEASE_TEMPLATE.md](/Users/likai/Documents/apple-project/MonitorControl/RELEASE_TEMPLATE.md) 编写发布说明
+4. 额外导出或压缩一个 `.zip` 作为 Sparkle 更新包
+5. 运行 `./generate-appcast.sh x.y.z /path/to/LumaGlass-x.y.z.zip`
+6. 用 `hdiutil` 打包 `.dmg`
+7. 上传 `.dmg` 和 `.zip` 到 GitHub Releases
+8. 提交并推送新的 [appcast.xml](/Users/likai/Documents/apple-project/MonitorControl/appcast.xml)
+9. 参考 [RELEASE_TEMPLATE.md](/Users/likai/Documents/apple-project/MonitorControl/RELEASE_TEMPLATE.md) 编写发布说明

@@ -262,6 +262,7 @@ class MenuHandler: NSMenu, NSMenuDelegate {
       settingsIcon.frame = NSRect(x: menuItemView.frame.maxX - iconSize * 3 - 20 - 17 + compensateForBlock, y: menuItemView.frame.origin.y + 5, width: iconSize, height: iconSize)
       settingsIcon.imageScaling = .scaleProportionallyUpOrDown
       settingsIcon.action = #selector(app.prefsClicked)
+      settingsIcon.target = app
 
       let updateIcon = NSButton()
       updateIcon.bezelStyle = .regularSquare
@@ -288,6 +289,7 @@ class MenuHandler: NSMenu, NSMenuDelegate {
       quitIcon.frame = NSRect(x: menuItemView.frame.maxX - iconSize - 17 + compensateForBlock, y: menuItemView.frame.origin.y + 5, width: iconSize, height: iconSize)
       quitIcon.imageScaling = .scaleProportionallyUpOrDown
       quitIcon.action = #selector(app.quitClicked)
+      quitIcon.target = app
 
       menuItemView.addSubview(settingsIcon)
       menuItemView.addSubview(updateIcon)

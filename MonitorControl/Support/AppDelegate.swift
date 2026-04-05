@@ -78,7 +78,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
   @objc func prefsClicked(_: AnyObject) {
     os_log("Settings clicked", type: .info)
-    self.settingsWindowController.show()
+    menu.closeMenu()
+    DispatchQueue.main.async {
+      self.settingsWindowController.show()
+      self.settingsWindowController.window?.makeKeyAndOrderFront(self)
+    }
   }
 
   func applicationShouldHandleReopen(_: NSApplication, hasVisibleWindows _: Bool) -> Bool {

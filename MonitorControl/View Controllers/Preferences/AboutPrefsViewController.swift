@@ -1,7 +1,6 @@
 //  Copyright © MonitorControl. @JoniVR, @theOneyouseek, @waydabber and others
 
 import Cocoa
-import ServiceManagement
 import Settings
 
 class AboutPrefsViewController: NSViewController, SettingsPane {
@@ -31,18 +30,6 @@ class AboutPrefsViewController: NSViewController, SettingsPane {
 
   @IBAction func openDonate(_: NSButton) {
     if let url = URL(string: "https://opencollective.com/monitorcontrol/donate") {
-      NSWorkspace.shared.open(url)
-    }
-  }
-
-  @IBAction func openWebPage(_: NSButton) {
-    if let url = URL(string: "https://monitorcontrol.app") {
-      NSWorkspace.shared.open(url)
-    }
-  }
-
-  @IBAction func openContributorsPage(_: NSButton) {
-    if let url = URL(string: "https://github.com/likaia/MonitorControl/graphs/contributors") {
       NSWorkspace.shared.open(url)
     }
   }
