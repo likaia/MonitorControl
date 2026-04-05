@@ -2,8 +2,8 @@
 /* Class = "NSButtonCell"; title = "Sync brightness changes from Built-in and Apple displays"; ObjectID = "0ca-DG-AgB"; */
 "0ca-DG-AgB.title" = "内蔵及び Apple 製ディスプレイの輝度の変化を同期";
 
-/* Class = "NSTextFieldCell"; title = "MonitorControl"; ObjectID = "1PJ-14-Bvn"; */
-"1PJ-14-Bvn.title" = "MonitorControl";
+/* Class = "NSTextFieldCell"; title = "LumaGlass"; ObjectID = "1PJ-14-Bvn"; */
+"1PJ-14-Bvn.title" = "LumaGlass";
 
 /* Class = "NSMenuItem"; title = "Assume last saved settings are valid (recommended)"; ObjectID = "1in-79-6qm"; */
 "1in-79-6qm.title" = "最後に保存された設定を有効とします (推奨)";
@@ -38,8 +38,8 @@
 /* Class = "NSBox"; title = "#bc-ignore!"; ObjectID = "4wn-2u-KRo"; */
 "4wn-2u-KRo.title" = "#bc-ignore!";
 
-/* Class = "NSTextFieldCell"; title = "Welcome to MonitorControl"; ObjectID = "5J0-BD-top"; */
-"5J0-BD-top.title" = "MonitorControl にようこそ";
+/* Class = "NSTextFieldCell"; title = "Welcome to LumaGlass"; ObjectID = "5J0-BD-top"; */
+"5J0-BD-top.title" = "LumaGlass にようこそ";
 
 /* Class = "NSButtonCell"; title = "Reset Settings"; ObjectID = "5yT-5F-X5R"; */
 "5yT-5F-X5R.title" = "設定をリセット";
@@ -62,8 +62,8 @@
 /* Class = "NSButtonCell"; title = "Use fine OSD scale for brightness and contrast"; ObjectID = "8Q8-57-xnT"; */
 "8Q8-57-xnT.title" = "OSDの細かい値を輝度とコントラストに利用する";
 
-/* Class = "NSButtonCell"; title = "Start using MonitorControl"; ObjectID = "8WE-da-OZC"; */
-"8WE-da-OZC.title" = "MonitorControl を使い始める";
+/* Class = "NSButtonCell"; title = "Start using LumaGlass"; ObjectID = "8WE-da-OZC"; */
+"8WE-da-OZC.title" = "LumaGlass を使い始める";
 
 /* Class = "NSButtonCell"; title = "Special thanks to our contributors!"; ObjectID = "95V-M4-2l5"; */
 "95V-M4-2l5.title" = "貢献者に多大に感謝します!";
@@ -152,8 +152,8 @@
 /* Class = "NSButtonCell"; title = "Use fine OSD scale for volume"; ObjectID = "J3L-MW-iJL"; */
 "J3L-MW-iJL.title" = "OSDの細かい値を音量に利用する";
 
-/* Class = "NSButtonCell"; title = "Start MonitorControl at Login"; ObjectID = "JWJ-OY-VtE"; */
-"JWJ-OY-VtE.title" = "MonitorControlをログイン時に起動する";
+/* Class = "NSButtonCell"; title = "Start LumaGlass at Login"; ObjectID = "JWJ-OY-VtE"; */
+"JWJ-OY-VtE.title" = "LumaGlassをログイン時に起動する";
 
 /* Class = "NSTextFieldCell"; title = "Note: you can press Shift during startup for 'Safe mode' to restore defaults and avoid reading or setting anything."; ObjectID = "Jx2-gO-nq9"; */
 "Jx2-gO-nq9.title" = "注: 起動中にShiftキーを押して「セーフモード」にすると、何も読み取ったり設定したりせず、まっさらな状態に戻すことができます。";
@@ -326,8 +326,8 @@
 /* Class = "NSButtonCell"; title = "Check for updates"; ObjectID = "jVH-oc-rUi"; */
 "jVH-oc-rUi.title" = "アップデートを確認";
 
-/* Class = "NSTextFieldCell"; title = "MonitorControl needs access to \"accessibility\" to use macOS native keys to control your display.\nYou can enable it by adding MonitorControl in System Settings > Security and Privacy > Accessibility."; ObjectID = "kBJ-Zf-1k2"; */
-"kBJ-Zf-1k2.title" = "macOSネイティブキーを使用してディスプレイを制御するには、MonitorControlが\"アクセシビリティ\"にアクセスする必要があります。\nこれを有効にするには、システム環境設定 > セキュリティとプライバシー > アクセシビリティ で MonitorControlを追加します。";
+/* Class = "NSTextFieldCell"; title = "LumaGlass needs access to \"accessibility\" to use macOS native keys to control your display.\nYou can enable it by adding LumaGlass in System Settings > Security and Privacy > Accessibility."; ObjectID = "kBJ-Zf-1k2"; */
+"kBJ-Zf-1k2.title" = "macOSネイティブキーを使用してディスプレイを制御するには、LumaGlassが\"アクセシビリティ\"にアクセスする必要があります。\nこれを有効にするには、システム環境設定 > セキュリティとプライバシー > アクセシビリティ で LumaGlassを追加します。";
 
 /* Class = "NSMenuItem"; title = "Depends on mouse pointer position"; ObjectID = "km4-hK-auM"; */
 "km4-hK-auM.title" = "マウスポインタの位置に依存";
@@ -350,8 +350,8 @@
 /* Class = "NSButtonCell"; title = "Avoid gamma table manipulation"; ObjectID = "na6-mS-MPi"; */
 "na6-mS-MPi.title" = "ガンマテーブル操作を防ぐ";
 
-/* Class = "NSTextFieldCell"; title = "Ensure MonitorControl is always running when you need it by launching the app at startup."; ObjectID = "nk6-Gh-Mfs"; */
-"nk6-Gh-Mfs.title" = "起動時にアプリを起動することで、MonitorControlが必要なときには常に実行されます。";
+/* Class = "NSTextFieldCell"; title = "Ensure LumaGlass is always running when you need it by launching the app at startup."; ObjectID = "nk6-Gh-Mfs"; */
+"nk6-Gh-Mfs.title" = "起動時にアプリを起動することで、LumaGlassが必要なときには常に実行されます。";
 
 /* Class = "NSTextFieldCell"; title = "Brightness up"; ObjectID = "nty-g6-Sde"; */
 "nty-g6-Sde.title" = "輝度を上げる";

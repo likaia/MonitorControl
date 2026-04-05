@@ -2,7 +2,7 @@
 "About" = "关于";
 
 /* Shown in the alert dialog */
-"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "另一个应用程序可能修改了亮度或者颜色所以导致了问题。\n\n如果要解决这个问题，您需要退出另一个应用程序或在MonitorControl中为您的显示器禁用伽马值控制!";
+"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "另一个应用程序可能修改了亮度或者颜色所以导致了问题。\n\n如果要解决这个问题，您需要退出另一个应用程序或在LumaGlass中为您的显示器禁用伽马值控制!";
 
 /* Shown in the main prefs window */
 "App menu" = "App选项";
@@ -29,7 +29,7 @@
 "Contrast" = "对比度";
 
 /* Version */
-"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ MonitorControl, ";
+"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ LumaGlass, ";
 
 /* Shown in record shortcut box */
 "Decrease" = "降低";
@@ -98,7 +98,7 @@
 "Safe Mode Activated" = "安全模式已经启动";
 
 /* Shown in the alert dialog */
-"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "启动时按下Shift键。MonitorControl启动时进入安全模式。已还原初始设置，停止DDC读取。";
+"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "启动时按下Shift键。LumaGlass启动时进入安全模式。已还原初始设置，停止DDC读取。";
 
 /* Shown in the alert dialog */
 "Shortcuts not available" = "快捷键无法使用";
@@ -128,7 +128,7 @@
 "This display is reported to support hardware DDC control. If you encounter issues, you can disable hardware DDC control to force software control." = "这个显示器报告支持DDC控制。如果使用遇到问题，您可以禁用硬件DDC控制以强制软件控制。";
 
 /* Shown in the Display Settings */
-"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "这个显示器支持苹果原生的亮度设置，macOS无需通过MonitorControl控制此屏幕。";
+"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "这个显示器支持苹果原生的亮度设置，macOS无需通过LumaGlass控制此屏幕。";
 
 /* Shown in the Display Settings */
 "This is a virtual display (examples: AirPlay, Sidecar, display connected via a DisplayLink Dock or similar) which does not allow hardware or software gammatable control. Shading is used as a substitute but only in non-mirror scenarios. Mouse cursor will be unaffected and artifacts may appear when entering/leaving full screen mode." = "这个是虚拟显示器（例如：AirPlay、Sidecar、通过DisplayLink Dock或类似软件连接的屏幕），不允许硬件或软件伽马值控制。只能在非镜像的情况下以遮光（Shading）作为代替设置方案。进入/离开全屏幕模式时，鼠标将不受影响，并且可能会出现残影。";
@@ -151,4 +151,4 @@
 "Yes" = "是";
 
 /* Shown in the alert dialog */
-"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "您需要在「系统偏好设置」>「安全性与隐私」>「辅助功能」中启用MonitorControl让键盘快捷键生效";
+"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "您需要在「系统偏好设置」>「安全性与隐私」>「辅助功能」中启用LumaGlass让键盘快捷键生效";

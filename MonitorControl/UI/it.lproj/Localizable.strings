@@ -2,7 +2,7 @@
 "About" = "Informazioni";
 
 /* Shown in the alert dialog */
-"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!";
+"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in LumaGlass!";
 
 /* Shown in the main prefs window */
 "App menu" = "App menu";
@@ -29,7 +29,7 @@
 "Contrast" = "Contrasto";
 
 /* Version */
-"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ MonitorControl, ";
+"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ LumaGlass, ";
 
 /* Shown in record shortcut box */
 "Decrease" = "Diminiusci";
@@ -98,7 +98,7 @@
 "Safe Mode Activated" = "Safe Mode Attivato";
 
 /* Shown in the alert dialog */
-"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "Il tasto Maiuscole è stato premuto all'avvio. MonitorControl è stato avviato in modalità sicura. Preferenze di default, lettura DDC bloccata.";
+"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "Il tasto Maiuscole è stato premuto all'avvio. LumaGlass è stato avviato in modalità sicura. Preferenze di default, lettura DDC bloccata.";
 
 /* Shown in the alert dialog */
 "Shortcuts not available" = "Abbreviazioni non disponibili";
@@ -128,7 +128,7 @@
 "This display is reported to support hardware DDC control. If you encounter issues, you can disable hardware DDC control to force software control." = "Questo monitor supporta il controllo DDC hardware. Se rilevi dei problemi, puoi disabilitarlo e forzare il controllo software.";
 
 /* Shown in the Display Settings */
-"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "Questo monitor supporta il protocollo nativo Apple della luminosità. Questo permette al macOS di controllare il monitor anhe senza l'utilizzo di MonitorControl.";
+"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "Questo monitor supporta il protocollo nativo Apple della luminosità. Questo permette al macOS di controllare il monitor anhe senza l'utilizzo di LumaGlass.";
 
 /* Shown in the Display Settings */
 "This is a virtual display (examples: AirPlay, Sidecar, display connected via a DisplayLink Dock or similar) which does not allow hardware or software gammatable control. Shading is used as a substitute but only in non-mirror scenarios. Mouse cursor will be unaffected and artifacts may appear when entering/leaving full screen mode." = "Questo monitor è un di tipo virtuale (esempio: AirPlay, Sidecar, connessione via via DisplayLink Dock o simili) e non consente il controllo hardware o software della gammatable. La sfumatura è utilizzata in sostituzione ma solo in modalità non duplicazione. Il cursore del mouse non rimane invariato e si potrebbero verificare artefatti entrando/uscendo dalla modalità a pieno schermo.";
@@ -149,4 +149,4 @@
 "Yes" = "Si";
 
 /* Shown in the alert dialog */
-"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "Devi abilitare MonitorControl nelle Preferenze di Sistema > Sicurezza e Privacy > Accessibilità affinchè le abbreviazioni da tastiera funzionino";
+"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "Devi abilitare LumaGlass nelle Preferenze di Sistema > Sicurezza e Privacy > Accessibilità affinchè le abbreviazioni da tastiera funzionino";

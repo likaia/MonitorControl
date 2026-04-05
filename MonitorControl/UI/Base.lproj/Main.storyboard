@@ -1989,7 +1989,7 @@
                             <textField identifier="softwareNameLabel" focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" id="dtg-g7-hZb">
                                 <rect key="frame" x="247" y="258" width="147" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="MonitorControl" id="1PJ-14-Bvn">
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="left" title="LumaGlass" id="1PJ-14-Bvn">
                                     <font key="font" textStyle="title1" name=".SFNS-Regular"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -2112,7 +2112,7 @@
                             </imageView>
                             <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="zz2-ed-nlQ">
                                 <rect key="frame" x="22" y="439" width="686" height="31"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Welcome to MonitorControl" id="5J0-BD-top">
+                                <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="Welcome to LumaGlass" id="5J0-BD-top">
                                     <font key="font" textStyle="largeTitle" name=".SFNS-Regular"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -2146,7 +2146,7 @@
                             </textField>
                             <textField focusRingType="none" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="2Mx-eg-r9b">
                                 <rect key="frame" x="70" y="330" width="550" height="16"/>
-                                <textFieldCell key="cell" selectable="YES" title="Ensure MonitorControl is always running when you need it by launching the app at startup." id="nk6-Gh-Mfs">
+                                <textFieldCell key="cell" selectable="YES" title="Ensure LumaGlass is always running when you need it by launching the app at startup." id="nk6-Gh-Mfs">
                                     <font key="font" textStyle="body" name=".SFNS-Regular"/>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -2154,7 +2154,7 @@
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="XWw-qf-xqA">
                                 <rect key="frame" x="70" y="303" width="203" height="18"/>
-                                <buttonCell key="cell" type="check" title="Start MonitorControl at Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="JWJ-OY-VtE">
+                                <buttonCell key="cell" type="check" title="Start LumaGlass at Login" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="JWJ-OY-VtE">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" textStyle="body" name=".SFNS-Regular"/>
                                 </buttonCell>
@@ -2230,8 +2230,8 @@
                                 <rect key="frame" x="70" y="111" width="615" height="32"/>
                                 <textFieldCell key="cell" selectable="YES" id="kBJ-Zf-1k2">
                                     <font key="font" textStyle="body" name=".SFNS-Regular"/>
-                                    <string key="title">MonitorControl needs access to "accessibility" to use macOS native keys to control your display.
-You can enable it by adding MonitorControl in System Settings &gt; Security and Privacy &gt; Accessibility.</string>
+                                    <string key="title">LumaGlass needs access to "accessibility" to use macOS native keys to control your display.
+You can enable it by adding LumaGlass in System Settings &gt; Security and Privacy &gt; Accessibility.</string>
                                     <color key="textColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
@@ -2248,7 +2248,7 @@ You can enable it by adding MonitorControl in System Settings &gt; Security and 
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="BWF-bm-wMQ">
                                 <rect key="frame" x="518" y="17" width="195" height="32"/>
-                                <buttonCell key="cell" type="push" title="Start using MonitorControl" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="8WE-da-OZC">
+                                <buttonCell key="cell" type="push" title="Start using LumaGlass" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="8WE-da-OZC">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                     <string key="keyEquivalent" base64-UTF8="YES">

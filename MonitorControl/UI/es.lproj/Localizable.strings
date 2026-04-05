@@ -1,8 +1,8 @@
 /* Shown in the main prefs window */
-"About" = "Acerca de MonitorControl";
+"About" = "Acerca de LumaGlass";
 
 /* Shown in the alert dialog */
-"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "Otra aplicación parece estar cambiando el brillo o el color, lo cual está causando problemas.\n\nPara arreglarlo, necesitas cerrar dicha aplicación o deshabilitar el control de gamma para tus pantallas en MonitorControl!";
+"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "Otra aplicación parece estar cambiando el brillo o el color, lo cual está causando problemas.\n\nPara arreglarlo, necesitas cerrar dicha aplicación o deshabilitar el control de gamma para tus pantallas en LumaGlass!";
 
 /* Shown in the main prefs window */
 "App menu" = "Menú de la App";
@@ -29,7 +29,7 @@
 "Contrast" = "Contraste";
 
 /* Version */
-"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ MonitorControl, ";
+"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ LumaGlass, ";
 
 /* Shown in record shortcut box */
 "Decrease" = "Reducir";
@@ -98,7 +98,7 @@
 "Safe Mode Activated" = "Modo Seguro Activado";
 
 /* Shown in the alert dialog */
-"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "La tecla Shift fue presionada durante el lanzamiento. MonitorControl se inició en modo seguro. Se han cargado las preferencias por defecto, la lectura DDC está bloqueada.";
+"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "La tecla Shift fue presionada durante el lanzamiento. LumaGlass se inició en modo seguro. Se han cargado las preferencias por defecto, la lectura DDC está bloqueada.";
 
 /* Shown in the alert dialog */
 "Shortcuts not available" = "Atajos no disponibles";
@@ -129,7 +129,7 @@
 "This display is reported to support hardware DDC control. If you encounter issues, you can disable hardware DDC control to force software control." = "Esta pantalla soporta el control DDC por hardware. Si encuentras algún problema, puedes deshabilitar el control DDC por hardware para forzar el control por software.";
 
 /* Shown in the Display Settings */
-"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "Esta pantalla soporta el protocolo de brillo nativo de Apple. Esto le permite también a macOS controlar la pantalla sin MonitorControl.";
+"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "Esta pantalla soporta el protocolo de brillo nativo de Apple. Esto le permite también a macOS controlar la pantalla sin LumaGlass.";
 
 /* Shown in the Display Settings */
 "This is a virtual display (examples: AirPlay, Sidecar, display connected via a DisplayLink Dock or similar) which does not allow hardware or software gammatable control. Shading is used as a substitute but only in non-mirror scenarios. Mouse cursor will be unaffected and artifacts may appear when entering/leaving full screen mode." = "Esto es una pantalla virtual (ejemplos: AirPlay, Sidecar, pantalla conectada a través del dock DisplayLink o similar) el cual no permite el control a través de gamma ni por hardware ni por software. El sombreado es usado como sustituto, pero solo en escenarios sin espejo. El cursor del ratón no se verá afectado pero pueden aparecer objetos extraños cuando se entra/sale del modo pantalla completa.";
@@ -150,4 +150,4 @@
 "Yes" = "Sí";
 
 /* Shown in the alert dialog */
-"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "Necesitas habilitar MonitorControl en Preferencias del Sistema > Seguridad y privacidad > Accesibilidad para permitir los atajos de teclado";
+"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "Necesitas habilitar LumaGlass en Preferencias del Sistema > Seguridad y privacidad > Accesibilidad para permitir los atajos de teclado";

@@ -4,8 +4,8 @@
 /* Class = "NSMenuItem"; title = "Assume last saved settings are valid (recommended)"; ObjectID = "1in-79-6qm"; */
 "1in-79-6qm.title" = "假设之前的设置可用（建议）";
 
-/* Class = "NSTextFieldCell"; title = "MonitorControl"; ObjectID = "1PJ-14-Bvn"; */
-"1PJ-14-Bvn.title" = "MonitorControl";
+/* Class = "NSTextFieldCell"; title = "LumaGlass"; ObjectID = "1PJ-14-Bvn"; */
+"1PJ-14-Bvn.title" = "LumaGlass";
 
 /* Class = "NSMenuItem"; title = "Standard keyboard volume and mute keys"; ObjectID = "1sy-Kd-WL5"; */
 "1sy-Kd-WL5.title" = "标准的键盘音量和静音键";
@@ -28,8 +28,8 @@
 /* Class = "NSTextFieldCell"; title = "Using window focus might not work properly with full screen apps."; ObjectID = "4dX-o1-xAc"; */
 "4dX-o1-xAc.title" = "启用后软件全屏时效果可能不理想。";
 
-/* Class = "NSTextFieldCell"; title = "Welcome to MonitorControl"; ObjectID = "5J0-BD-top"; */
-"5J0-BD-top.title" = "欢迎使用MonitorControl";
+/* Class = "NSTextFieldCell"; title = "Welcome to LumaGlass"; ObjectID = "5J0-BD-top"; */
+"5J0-BD-top.title" = "欢迎使用LumaGlass";
 
 /* Class = "NSButtonCell"; title = "Reset Settings"; ObjectID = "5yT-5F-X5R"; */
 "5yT-5F-X5R.title" = "重置设置";
@@ -49,8 +49,8 @@
 /* Class = "NSButtonCell"; title = "Use fine OSD scale for brightness and contrast"; ObjectID = "8Q8-57-xnT"; */
 "8Q8-57-xnT.title" = "使用精细的OSD刻度";
 
-/* Class = "NSButtonCell"; title = "Start using MonitorControl"; ObjectID = "8WE-da-OZC"; */
-"8WE-da-OZC.title" = "开始使用MonitorControl";
+/* Class = "NSButtonCell"; title = "Start using LumaGlass"; ObjectID = "8WE-da-OZC"; */
+"8WE-da-OZC.title" = "开始使用LumaGlass";
 
 /* Class = "NSButtonCell"; title = "Special thanks to our contributors!"; ObjectID = "95V-M4-2l5"; */
 "95V-M4-2l5.title" = "特别感谢我们的贡献者们！";
@@ -208,8 +208,8 @@
 /* Class = "NSButtonCell"; title = "Check for updates"; ObjectID = "jVH-oc-rUi"; */
 "jVH-oc-rUi.title" = "检查更新";
 
-/* Class = "NSButtonCell"; title = "Start MonitorControl at Login"; ObjectID = "JWJ-OY-VtE"; */
-"JWJ-OY-VtE.title" = "在登录时启动MonitorControl";
+/* Class = "NSButtonCell"; title = "Start LumaGlass at Login"; ObjectID = "JWJ-OY-VtE"; */
+"JWJ-OY-VtE.title" = "在登录时启动LumaGlass";
 
 /* Class = "NSTextFieldCell"; title = "Note: you can press Shift during startup for 'Safe mode' to restore defaults and avoid reading or setting anything."; ObjectID = "Jx2-gO-nq9"; */
 "Jx2-gO-nq9.title" = "注：启动时按下Shift进入「安全模式」以恢复原始设置并避免读取或更动任何设置。";
@@ -217,8 +217,8 @@
 /* Class = "NSButtonCell"; title = "Enable for Apple branded and built-in displays as well"; ObjectID = "K6A-4z-1aQ"; */
 "K6A-4z-1aQ.title" = "苹果和内置的显示器";
 
-/* Class = "NSTextFieldCell"; title = "MonitorControl needs access to \"accessibility\" to use macOS native keys to control your display.\nYou can enable it by adding MonitorControl in System Settings > Security and Privacy > Accessibility."; ObjectID = "kBJ-Zf-1k2"; */
-"kBJ-Zf-1k2.title" = "若需使用macOS原生的按键控制显示器，请给MonitorControl授予“辅助功能”权限。\n您可以在 系统偏好设置 > 安全性与隐私 > 辅助功能 中添加MonitorControl以启用这个功能。";
+/* Class = "NSTextFieldCell"; title = "LumaGlass needs access to \"accessibility\" to use macOS native keys to control your display.\nYou can enable it by adding LumaGlass in System Settings > Security and Privacy > Accessibility."; ObjectID = "kBJ-Zf-1k2"; */
+"kBJ-Zf-1k2.title" = "若需使用macOS原生的按键控制显示器，请给LumaGlass授予“辅助功能”权限。\n您可以在 系统偏好设置 > 安全性与隐私 > 辅助功能 中添加LumaGlass以启用这个功能。";
 
 /* Class = "NSTextFieldCell"; title = "Screen to control:"; ObjectID = "Kfj-WK-aSL"; */
 "Kfj-WK-aSL.title" = "控制的显示器：";
@@ -259,8 +259,8 @@
 /* Class = "NSButtonCell"; title = "Avoid gamma table manipulation"; ObjectID = "na6-mS-MPi"; */
 "na6-mS-MPi.title" = "避免设置伽马值";
 
-/* Class = "NSTextFieldCell"; title = "Ensure MonitorControl is always running when you need it by launching the app at startup."; ObjectID = "nk6-Gh-Mfs"; */
-"nk6-Gh-Mfs.title" = "在启动时启动MonitorControl，确保其在需要时始终运行。";
+/* Class = "NSTextFieldCell"; title = "Ensure LumaGlass is always running when you need it by launching the app at startup."; ObjectID = "nk6-Gh-Mfs"; */
+"nk6-Gh-Mfs.title" = "在启动时启动LumaGlass，确保其在需要时始终运行。";
 
 /* Class = "NSTextFieldCell"; title = "Brightness up"; ObjectID = "nty-g6-Sde"; */
 "nty-g6-Sde.title" = "调高亮度";

@@ -4,8 +4,8 @@
 /* Class = "NSMenuItem"; title = "Assume last saved settings are valid (recommended)"; ObjectID = "1in-79-6qm"; */
 "1in-79-6qm.title" = "Przyjmij, że ostatnio zapisane ustawienia są ważne (zalecane)";
 
-/* Class = "NSTextFieldCell"; title = "MonitorControl"; ObjectID = "1PJ-14-Bvn"; */
-"1PJ-14-Bvn.title" = "MonitorControl";
+/* Class = "NSTextFieldCell"; title = "LumaGlass"; ObjectID = "1PJ-14-Bvn"; */
+"1PJ-14-Bvn.title" = "LumaGlass";
 
 /* Class = "NSMenuItem"; title = "Standard keyboard volume and mute keys"; ObjectID = "1sy-Kd-WL5"; */
 "1sy-Kd-WL5.title" = "Standardowe klawisze głośności i wyciszania klawiatury";
@@ -28,8 +28,8 @@
 /* Class = "NSTextFieldCell"; title = "Using window focus might not work properly with full screen apps."; ObjectID = "4dX-o1-xAc"; */
 "4dX-o1-xAc.title" = "Używanie fokusa okna może nie działać poprawnie w aplikacjach pełnoekranowych.";
 
-/* Class = "NSTextFieldCell"; title = "Welcome to MonitorControl"; ObjectID = "5J0-BD-top"; */
-"5J0-BD-top.title" = "Welcome to MonitorControl";
+/* Class = "NSTextFieldCell"; title = "Welcome to LumaGlass"; ObjectID = "5J0-BD-top"; */
+"5J0-BD-top.title" = "Welcome to LumaGlass";
 
 /* Class = "NSButtonCell"; title = "Reset Settings"; ObjectID = "5yT-5F-X5R"; */
 "5yT-5F-X5R.title" = "Resetuj ustawienia";
@@ -49,8 +49,8 @@
 /* Class = "NSButtonCell"; title = "Use fine OSD scale for brightness and contrast"; ObjectID = "8Q8-57-xnT"; */
 "8Q8-57-xnT.title" = "Użyj precyzyjnej skali OSD dla jasności i kontrastu";
 
-/* Class = "NSButtonCell"; title = "Start using MonitorControl"; ObjectID = "8WE-da-OZC"; */
-"8WE-da-OZC.title" = "Start using MonitorControl";
+/* Class = "NSButtonCell"; title = "Start using LumaGlass"; ObjectID = "8WE-da-OZC"; */
+"8WE-da-OZC.title" = "Start using LumaGlass";
 
 /* Class = "NSButtonCell"; title = "Special thanks to our contributors!"; ObjectID = "95V-M4-2l5"; */
 "95V-M4-2l5.title" = "Specjalne podziękowania dla naszych współpracowników!";
@@ -208,8 +208,8 @@
 /* Class = "NSButtonCell"; title = "Check for updates"; ObjectID = "jVH-oc-rUi"; */
 "jVH-oc-rUi.title" = "Sprawdź czy są aktualizacje";
 
-/* Class = "NSButtonCell"; title = "Start MonitorControl at Login"; ObjectID = "JWJ-OY-VtE"; */
-"JWJ-OY-VtE.title" = "Start MonitorControl at Login";
+/* Class = "NSButtonCell"; title = "Start LumaGlass at Login"; ObjectID = "JWJ-OY-VtE"; */
+"JWJ-OY-VtE.title" = "Start LumaGlass at Login";
 
 /* Class = "NSTextFieldCell"; title = "Note: you can press Shift during startup for 'Safe mode' to restore defaults and avoid reading or setting anything."; ObjectID = "Jx2-gO-nq9"; */
 "Jx2-gO-nq9.title" = "Uwaga: podczas uruchamiania można nacisnąć klawisz Shift, aby przywrócić domyślne ustawienia i uniknąć odczytywania lub ustawiania czegokolwiek.";
@@ -217,8 +217,8 @@
 /* Class = "NSButtonCell"; title = "Enable for Apple branded and built-in displays as well"; ObjectID = "K6A-4z-1aQ"; */
 "K6A-4z-1aQ.title" = "Włącz współpracę z monitorami Apple i wbudowanymi";
 
-/* Class = "NSTextFieldCell"; title = "MonitorControl needs access to \"accessibility\" to use macOS native keys to control your display.\nYou can enable it by adding MonitorControl in System Settings > Security and Privacy > Accessibility."; ObjectID = "kBJ-Zf-1k2"; */
-"kBJ-Zf-1k2.title" = "MonitorControl needs access to \"accessibility\" to use macOS native keys to control your display.\nYou can enable it by adding MonitorControl in System Settings > Security and Privacy > Accessibility.";
+/* Class = "NSTextFieldCell"; title = "LumaGlass needs access to \"accessibility\" to use macOS native keys to control your display.\nYou can enable it by adding LumaGlass in System Settings > Security and Privacy > Accessibility."; ObjectID = "kBJ-Zf-1k2"; */
+"kBJ-Zf-1k2.title" = "LumaGlass needs access to \"accessibility\" to use macOS native keys to control your display.\nYou can enable it by adding LumaGlass in System Settings > Security and Privacy > Accessibility.";
 
 /* Class = "NSTextFieldCell"; title = "Screen to control:"; ObjectID = "Kfj-WK-aSL"; */
 "Kfj-WK-aSL.title" = "Screen to control:";
@@ -259,8 +259,8 @@
 /* Class = "NSButtonCell"; title = "Avoid gamma table manipulation"; ObjectID = "na6-mS-MPi"; */
 "na6-mS-MPi.title" = "Unikaj manipulacji tablicą gamma";
 
-/* Class = "NSTextFieldCell"; title = "Ensure MonitorControl is always running when you need it by launching the app at startup."; ObjectID = "nk6-Gh-Mfs"; */
-"nk6-Gh-Mfs.title" = "Ensure MonitorControl is always running when you need it by launching the app at startup.";
+/* Class = "NSTextFieldCell"; title = "Ensure LumaGlass is always running when you need it by launching the app at startup."; ObjectID = "nk6-Gh-Mfs"; */
+"nk6-Gh-Mfs.title" = "Ensure LumaGlass is always running when you need it by launching the app at startup.";
 
 /* Class = "NSTextFieldCell"; title = "Brightness up"; ObjectID = "nty-g6-Sde"; */
 "nty-g6-Sde.title" = "Brightness up";

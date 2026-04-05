@@ -1,8 +1,8 @@
 <img src=".github/Icon-cropped.png" width="200" alt="App icon" align="left"/>
 
 <div>
-<h3>MonitorControl for macOS 26</h3>
-<p>A macOS 26-adapted fork of MonitorControl for controlling external display brightness and volume.
+<h3>LumaGlass</h3>
+<p>LumaGlass is a macOS 26-adapted display control app, focused on external display brightness and volume control.
 Includes native-style menu sliders, keyboard support, and updated macOS 26 UI behavior.</p>
 <a href="https://github.com/likaia/MonitorControl/releases"><img src=".github/macos_badge_noborder.png" width="175" alt="Download for macOS"/></a>
 </div>

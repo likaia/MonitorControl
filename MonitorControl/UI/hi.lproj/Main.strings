@@ -2,7 +2,7 @@
 /* Class = "NSButtonCell"; title = "Sync brightness changes from Built-in and Apple displays"; ObjectID = "0ca-DG-AgB"; */
 "0ca-DG-AgB.title" = "अंतर्निर्मित और ऐपल प्रदर्शनों से चमक परिवर्तनों को सिंक करें";
 
-/* Class = "NSTextFieldCell"; title = "MonitorControl"; ObjectID = "1PJ-14-Bvn"; */
+/* Class = "NSTextFieldCell"; title = "LumaGlass"; ObjectID = "1PJ-14-Bvn"; */
 "1PJ-14-Bvn.title" = "मॉनिटर कंट्रोल";
 
 /* Class = "NSMenuItem"; title = "Assume last saved settings are valid (recommended)"; ObjectID = "1in-79-6qm"; */
@@ -38,7 +38,7 @@
 /* Class = "NSBox"; title = "#bc-ignore!"; ObjectID = "4wn-2u-KRo"; */
 "4wn-2u-KRo.title" = "#बीसी-इग्नोर!";
 
-/* Class = "NSTextFieldCell"; title = "Welcome to MonitorControl"; ObjectID = "5J0-BD-top"; */
+/* Class = "NSTextFieldCell"; title = "Welcome to LumaGlass"; ObjectID = "5J0-BD-top"; */
 "5J0-BD-top.title" = "मॉनिटर कंट्रोल में आपका स्वागत है";
 
 /* Class = "NSButtonCell"; title = "Reset Settings"; ObjectID = "5yT-5F-X5R"; */
@@ -62,7 +62,7 @@
 /* Class = "NSButtonCell"; title = "Use fine OSD scale for brightness and contrast"; ObjectID = "8Q8-57-xnT"; */
 "8Q8-57-xnT.title" = "ब्राइटनेस और कंट्रास्ट के लिए ठीक ओ. एस. डी. स्केल का उपयोग करें";
 
-/* Class = "NSButtonCell"; title = "Start using MonitorControl"; ObjectID = "8WE-da-OZC"; */
+/* Class = "NSButtonCell"; title = "Start using LumaGlass"; ObjectID = "8WE-da-OZC"; */
 "8WE-da-OZC.title" = "मॉनिटर कंट्रोल का उपयोग शुरू करें";
 
 /* Class = "NSButtonCell"; title = "Special thanks to our contributors!"; ObjectID = "95V-M4-2l5"; */
@@ -152,7 +152,7 @@
 /* Class = "NSButtonCell"; title = "Use fine OSD scale for volume"; ObjectID = "J3L-MW-iJL"; */
 "J3L-MW-iJL.title" = "आयतन के लिए ठीक ओ. एस. डी. स्केल का उपयोग करें";
 
-/* Class = "NSButtonCell"; title = "Start MonitorControl at Login"; ObjectID = "JWJ-OY-VtE"; */
+/* Class = "NSButtonCell"; title = "Start LumaGlass at Login"; ObjectID = "JWJ-OY-VtE"; */
 "JWJ-OY-VtE.title" = "लॉगिन पर मॉनिटरकंट्रोल प्रारंभ करें";
 
 /* Class = "NSTextFieldCell"; title = "Note: you can press Shift during startup for 'Safe mode' to restore defaults and avoid reading or setting anything."; ObjectID = "Jx2-gO-nq9"; */
@@ -326,7 +326,7 @@
 /* Class = "NSButtonCell"; title = "Check for updates"; ObjectID = "jVH-oc-rUi"; */
 "jVH-oc-rUi.title" = "अपडेट के लिए देखें";
 
-/* Class = "NSTextFieldCell"; title = "MonitorControl needs access to \"accessibility\" to use macOS native keys to control your display.\nYou can enable it by adding MonitorControl in System Settings > Security and Privacy > Accessibility."; ObjectID = "kBJ-Zf-1k2"; */
+/* Class = "NSTextFieldCell"; title = "LumaGlass needs access to \"accessibility\" to use macOS native keys to control your display.\nYou can enable it by adding LumaGlass in System Settings > Security and Privacy > Accessibility."; ObjectID = "kBJ-Zf-1k2"; */
 "kBJ-Zf-1k2.title" = "मॉनिटर कंट्रोल को आपके प्रदर्शन को नियंत्रित करने के लिए macOS मूल कुंजी का उपयोग करने के लिए \"एक्सेसिबिलिटी\" तक पहुंच की आवश्यकता है।\n आप इसे सिस्टम वरीयताएँ> सुरक्षा और गोपनीयता> अभिगम्यता में मॉनिटरकंट्रोल जोड़कर सक्षम कर सकते हैं।";
 
 /* Class = "NSMenuItem"; title = "Depends on mouse pointer position"; ObjectID = "km4-hK-auM"; */
@@ -350,7 +350,7 @@
 /* Class = "NSButtonCell"; title = "Avoid gamma table manipulation"; ObjectID = "na6-mS-MPi"; */
 "na6-mS-MPi.title" = "गामा टेबल हेरफेर से बचें";
 
-/* Class = "NSTextFieldCell"; title = "Ensure MonitorControl is always running when you need it by launching the app at startup."; ObjectID = "nk6-Gh-Mfs"; */
+/* Class = "NSTextFieldCell"; title = "Ensure LumaGlass is always running when you need it by launching the app at startup."; ObjectID = "nk6-Gh-Mfs"; */
 "nk6-Gh-Mfs.title" = "सुनिश्चित करें कि मॉनिटरकंट्रोल हमेशा चालू रहे जब आपको इसकी आवश्यकता हो ऐप को स्टार्टअप पर लॉन्च करके।";
 
 /* Class = "NSTextFieldCell"; title = "Brightness up"; ObjectID = "nty-g6-Sde"; */

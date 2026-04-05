@@ -2,7 +2,7 @@
 "About" = "정보";
 
 /* Shown in the alert dialog */
-"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "다른 앱이 밝기 또는 색상을 변경하여 문제를 일으키는 것 같습니다.\n\n이 문제를 해결하려면 다른 앱을 종료하거나 MonitorControl에서 디스플레이에 대한 감마 제어를 비활성화해야 합니다!";
+"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "다른 앱이 밝기 또는 색상을 변경하여 문제를 일으키는 것 같습니다.\n\n이 문제를 해결하려면 다른 앱을 종료하거나 LumaGlass에서 디스플레이에 대한 감마 제어를 비활성화해야 합니다!";
 
 /* Shown in the main prefs window */
 "App menu" = "앱 메뉴";
@@ -29,7 +29,7 @@
 "Contrast" = "대비";
 
 /* Version */
-"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ MonitorControl, ";
+"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ LumaGlass, ";
 
 /* Shown in record shortcut box */
 "Decrease" = "감소";
@@ -98,7 +98,7 @@
 "Safe Mode Activated" = "안전모드 활성화 됨";
 
 /* Shown in the alert dialog */
-"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "Shift 키가 눌린 채로 시작되었습니다. MonitorControl이 안전모드로 시작되었습니다. 기본 설정을 다시 불러왔으며, DDC 읽기가 제한됩니다.";
+"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "Shift 키가 눌린 채로 시작되었습니다. LumaGlass이 안전모드로 시작되었습니다. 기본 설정을 다시 불러왔으며, DDC 읽기가 제한됩니다.";
 
 /* Shown in the alert dialog */
 "Shortcuts not available" = "단축키를 사용할 수 없음";
@@ -128,7 +128,7 @@
 "This display is reported to support hardware DDC control. If you encounter issues, you can disable hardware DDC control to force software control." = "이 디스플레이는 하드웨어 DDC 제어를 지원하는 것으로 보고되었습니다. 문제가 발생하면 하드웨어 DDC 제어를 비활성화하여 소프트웨어 제어를 강제 실행할 수 있습니다.";
 
 /* Shown in the Display Settings */
-"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "이 디스플레이는 기본 Apple 밝기 프로토콜을 지원합니다. 이를 통해 macOS는 MonitorControl 없이도 이 디스플레이를 제어할 수 있습니다.";
+"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "이 디스플레이는 기본 Apple 밝기 프로토콜을 지원합니다. 이를 통해 macOS는 LumaGlass 없이도 이 디스플레이를 제어할 수 있습니다.";
 
 /* Shown in the Display Settings */
 "This is a virtual display (examples: AirPlay, Sidecar, display connected via a DisplayLink Dock or similar) which does not allow hardware or software gammatable control. Shading is used as a substitute but only in non-mirror scenarios. Mouse cursor will be unaffected and artifacts may appear when entering/leaving full screen mode." = "하드웨어 또는 소프트웨어 감마 설정을 허용하지 않는 가상 디스플레이(예: AirPlay, Sidecar, DisplayLink Dock을 통해 연결된 디스플레이 등)입니다. 명암 조절이 대신 사용되지만 미러링이 아닌 경우에만 사용됩니다. 마우스 커서는 영향을 받지 않으며 전체 화면 모드에 들어가거나 나갈 때 아티팩트가 나타날 수 있습니다.";
@@ -149,4 +149,4 @@
 "Yes" = "예";
 
 /* Shown in the alert dialog */
-"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "단축키가 동작하기 위해서는 시스템 환경설정 > 개인정보 보호 및 보안 > 손쉬운 사용에서 MonitorControl을 활성화해야 합니다.";
+"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "단축키가 동작하기 위해서는 시스템 환경설정 > 개인정보 보호 및 보안 > 손쉬운 사용에서 LumaGlass을 활성화해야 합니다.";

@@ -2,7 +2,7 @@
 "About" = "Sobre";
 
 /* Shown in the alert dialog */
-"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "Parece que outra aplicação está a alterar o brilho ou as cores, o que está a causar problemas.\n\nPara resolveres o problema, precisas de fechar a outra app ou desativar o controlo de gamma para os teus monitores no MonitorControl!";
+"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "Parece que outra aplicação está a alterar o brilho ou as cores, o que está a causar problemas.\n\nPara resolveres o problema, precisas de fechar a outra app ou desativar o controlo de gamma para os teus monitores no LumaGlass!";
 
 /* Shown in the main prefs window */
 "App menu" = "Menu da aplicação";
@@ -29,7 +29,7 @@
 "Contrast" = "Contraste";
 
 /* Version */
-"Copyright Ⓒ MonitorControl, " = "Direitos Reservados Ⓒ MonitorControl, ";
+"Copyright Ⓒ MonitorControl, " = "Direitos Reservados Ⓒ LumaGlass, ";
 
 /* Shown in record shortcut box */
 "Decrease" = "Diminuir";
@@ -98,7 +98,7 @@
 "Safe Mode Activated" = "Modo Seguro Ativado";
 
 /* Shown in the alert dialog */
-"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "Shift foi pressionado durante o início. MonitorControl iniciou em modo seguro. Preferências padrão foram carregadas, leitura do DDC read está bloqueada.";
+"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "Shift foi pressionado durante o início. LumaGlass iniciou em modo seguro. Preferências padrão foram carregadas, leitura do DDC read está bloqueada.";
 
 /* Shown in the alert dialog */
 "Shortcuts not available" = "Atalhos não disponíveis";
@@ -128,7 +128,7 @@
 "This display is reported to support hardware DDC control. If you encounter issues, you can disable hardware DDC control to force software control." = "Este monitor suporta o controlo de hardware DCC. Se tiveres problemas, podes desligar o controle de hardware DDC e forçar o controlo via software";
 
 /* Shown in the Display Settings */
-"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "Este monitor suport o protocolo nativo Apple. Permite o macOS controlar ele sem o MonitorControl.";
+"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "Este monitor suport o protocolo nativo Apple. Permite o macOS controlar ele sem o LumaGlass.";
 
 /* Shown in the Display Settings */
 "This is a virtual display (examples: AirPlay, Sidecar, display connected via a DisplayLink Dock or similar) which does not allow hardware or software gammatable control. Shading is used as a substitute but only in non-mirror scenarios. Mouse cursor will be unaffected and artifacts may appear when entering/leaving full screen mode." = "Este é um monitor virtual (exemplos: AirPlay, Sidecar, monitor conectado via a DisplayLink Dock ou semelhante) que não permite o controlo via hardware ou software. Shading é usado como um substituto mas somente em cenários não espelhados. O cursor do rato não será afetado e artefatos podem aparecer a entrar ou a sair do modo de tela cheia.";
@@ -149,4 +149,4 @@
 "Yes" = "Sim";
 
 /* Shown in the alert dialog */
-"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "Precisas de habilitar o MonitorControl nas Preferências do Sistema > Segurança e privacidade > Acessibilidade para que os atalhos de teclado funcionem";
+"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "Precisas de habilitar o LumaGlass nas Preferências do Sistema > Segurança e privacidade > Acessibilidade para que os atalhos de teclado funcionem";

@@ -2,7 +2,7 @@
 "About" = "О программе";
 
 /* Shown in the alert dialog */
-"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "Похоже другое приложение изменяет яркость или цвета, что вызывает проблемы.\n\nДля решения этой проблемы вам нужно закрыть другое приложение или отключить управление гаммой для ваших дисплеев в MonitorControl!";
+"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "Похоже другое приложение изменяет яркость или цвета, что вызывает проблемы.\n\nДля решения этой проблемы вам нужно закрыть другое приложение или отключить управление гаммой для ваших дисплеев в LumaGlass!";
 
 /* Shown in the main prefs window */
 "App menu" = "Меню";
@@ -29,7 +29,7 @@
 "Contrast" = "Контраст";
 
 /* Version */
-"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ MonitorControl, ";
+"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ LumaGlass, ";
 
 /* Shown in record shortcut box */
 "Decrease" = "Уменьшить";
@@ -98,7 +98,7 @@
 "Safe Mode Activated" = "Активирован безопасный режим";
 
 /* Shown in the alert dialog */
-"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "Shift был нажат во время запуска. MonitorControl запущен в безопасном режиме. Загружены настройки по умолчанию, чтение DDC заблокировано.";
+"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "Shift был нажат во время запуска. LumaGlass запущен в безопасном режиме. Загружены настройки по умолчанию, чтение DDC заблокировано.";
 
 /* Shown in the alert dialog */
 "Shortcuts not available" = "Сочетания клавиш недоступны";
@@ -128,7 +128,7 @@
 "This display is reported to support hardware DDC control. If you encounter issues, you can disable hardware DDC control to force software control." = "Этот дисплей сообщает, что поддерживает аппаратное управление через DDC. В случае проблем, вы можете отключить аппаратное управление через DDC, чтобы принудительно использовать программное управление.";
 
 /* Shown in the Display Settings */
-"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "Этот дисплей поддерживает нативный протокол яркости Apple. Это позволяет macOS управлять этим дисплеем без использования MonitorControl.";
+"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "Этот дисплей поддерживает нативный протокол яркости Apple. Это позволяет macOS управлять этим дисплеем без использования LumaGlass.";
 
 /* Shown in the Display Settings */
 "This is a virtual display (examples: AirPlay, Sidecar, display connected via a DisplayLink Dock or similar) which does not allow hardware or software gammatable control. Shading is used as a substitute but only in non-mirror scenarios. Mouse cursor will be unaffected and artifacts may appear when entering/leaving full screen mode." = "Это виртуальный дисплей (например: AirPlay, Sidecar, дисплей подключенный через док-станцию DisplayLink или аналогичное устройство), который не поддерживает аппаратное или программное управление гаммой. Затенение используется в качестве замены, но только в режимах без видео-повтора. При этом курсор мыши останется неизменным и могут возникнуть артефакты при входе/выходе из полноэкранного режима.";
@@ -149,4 +149,4 @@
 "Yes" = "Да";
 
 /* Shown in the alert dialog */
-"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "Вам необходимо включить MonitorControl, перейдите в Системные настройки > Конфиденциальность и безопасность > Универсальный доступ, чтобы сочетания клавиш работали";
+"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "Вам необходимо включить LumaGlass, перейдите в Системные настройки > Конфиденциальность и безопасность > Универсальный доступ, чтобы сочетания клавиш работали";

@@ -86,7 +86,7 @@
 		2FBCCED52853930200C06A13 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
 		2FBCCED62853930200C06A13 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InternetAccessPolicy.strings; sourceTree = "<group>"; };
 		2FBCCED72853930200C06A13 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
-		56754EAB1D9A4016007BCDC5 /* MonitorControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56754EAB1D9A4016007BCDC5 /* LumaGlass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LumaGlass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56754EAE1D9A4016007BCDC5 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = main.swift; sourceTree = "<group>"; };
 		56754EB01D9A4016007BCDC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C85EFD922C941B000227EA1 /* DisplayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayManager.swift; sourceTree = "<group>"; };
@@ -247,7 +247,7 @@
 		56754EAC1D9A4016007BCDC5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56754EAB1D9A4016007BCDC5 /* MonitorControl.app */,
+				56754EAB1D9A4016007BCDC5 /* LumaGlass.app */,
 				F06792E7200A73460066C438 /* MonitorControlHelper.app */,
 			);
 			name = Products;
@@ -401,8 +401,8 @@
 				AA70817B27046B9800CC5625 /* Sparkle */,
 				AAD7DD332CAFF3D90062822F /* Settings */,
 			);
-			productName = MonitorControl.OSX;
-			productReference = 56754EAB1D9A4016007BCDC5 /* MonitorControl.app */;
+			productName = LumaGlass;
+			productReference = 56754EAB1D9A4016007BCDC5 /* LumaGlass.app */;
 			productType = "com.apple.product-type.application";
 		};
 		F06792E6200A73460066C438 /* MonitorControlHelper */ = {
@@ -887,7 +887,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.monitorcontrol.MonitorControl;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+					PRODUCT_NAME = LumaGlass;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MonitorControl/Support/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -924,7 +924,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 1.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.monitorcontrol.MonitorControl;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+					PRODUCT_NAME = LumaGlass;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "MonitorControl/Support/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";

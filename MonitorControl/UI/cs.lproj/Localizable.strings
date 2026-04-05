@@ -2,7 +2,7 @@
 "About" = "O aplikaci";
 
 /* Shown in the alert dialog */
-"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "Zdá se, že jas a barvy ovládá ještě nějaká další aplikace, což způsobuje problémy.\n\nBuďto jinou aplikaci ukončete, nebo v MonitorControl vypněte ovládání gamy pro Vaše displeje!";
+"An other app seems to change the brightness or colors which causes issues.\n\nTo solve this, you need to quit the other app or disable gamma control for your displays in MonitorControl!" = "Zdá se, že jas a barvy ovládá ještě nějaká další aplikace, což způsobuje problémy.\n\nBuďto jinou aplikaci ukončete, nebo v LumaGlass vypněte ovládání gamy pro Vaše displeje!";
 
 /* Shown in the main prefs window */
 "App menu" = "Nabídka";
@@ -29,7 +29,7 @@
 "Contrast" = "Kontrast";
 
 /* Version */
-"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ MonitorControl, ";
+"Copyright Ⓒ MonitorControl, " = "Copyright Ⓒ LumaGlass, ";
 
 /* Shown in record shortcut box */
 "Decrease" = "Snížit";
@@ -98,7 +98,7 @@
 "Safe Mode Activated" = "Bezpečný režim aktivován";
 
 /* Shown in the alert dialog */
-"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "Běhěm spuštění byl stisknutý Shift. MonitorControl běží v bezpečném režimu. Byla načtena výchozí nastavení; čtení DDC je zablokováno.";
+"Shift was pressed during launch. MonitorControl started in safe mode. Default settings are reloaded, DDC read is blocked." = "Běhěm spuštění byl stisknutý Shift. LumaGlass běží v bezpečném režimu. Byla načtena výchozí nastavení; čtení DDC je zablokováno.";
 
 /* Shown in the alert dialog */
 "Shortcuts not available" = "Zkratky nejsou k dispozici";
@@ -128,7 +128,7 @@
 "This display is reported to support hardware DDC control. If you encounter issues, you can disable hardware DDC control to force software control." = "Tento displej by měl podporovat hardwarové DDC ovládání. Pokud narazíte na problém, můžete hardwarové ovládání DDC vypnout a použít vynucené softwarové ovládání.";
 
 /* Shown in the Display Settings */
-"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "Tento displej podporuje nativní jasový protokol Apple. Díky tomu ho může macOS ovládat i bez MonitorControl.";
+"This display supports native Apple brightness protocol. This allows macOS to control this display without MonitorControl as well." = "Tento displej podporuje nativní jasový protokol Apple. Díky tomu ho může macOS ovládat i bez LumaGlass.";
 
 /* Shown in the Display Settings */
 "This is a virtual display (examples: AirPlay, Sidecar, display connected via a DisplayLink Dock or similar) which does not allow hardware or software gammatable control. Shading is used as a substitute but only in non-mirror scenarios. Mouse cursor will be unaffected and artifacts may appear when entering/leaving full screen mode." = "Toto je virtuální displej (např. AirPlay, Sidecar, DisplayLink a podobně), který neumožňuje hardwarové, ani softwarové ovládání gamy. Jako náhrada slouží stínování, ale jen za předpokladu, že displej není nastaven na zrcadlení. Změny se neprojeví na ukazateli myši a můžou se objevit vizuální artefakty při přepínání režimu na celou obrazovku.";
@@ -149,4 +149,4 @@
 "Yes" = "Ano";
 
 /* Shown in the alert dialog */
-"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "Abyste mohli používat klávesové zkratky, jděte do Předvoleb systému > Zabezpečení a soukromí > Zpřístupnění a tam zaškrtněte MonitorControl";
+"You need to enable MonitorControl in System Settings > Security and Privacy > Accessibility for the keyboard shortcuts to work" = "Abyste mohli používat klávesové zkratky, jděte do Předvoleb systému > Zabezpečení a soukromí > Zpřístupnění a tam zaškrtněte LumaGlass";
