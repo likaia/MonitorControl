@@ -29,7 +29,7 @@ class AboutPrefsViewController: NSViewController, SettingsPane {
   }
 
   @IBAction func openDonate(_: NSButton) {
-    if let url = URL(string: "https://opencollective.com/monitorcontrol/donate") {
+    if let url = URL(string: "https://resource.kaisir.cn/uploads/MarkDownImg/20260128/pEZcuA.jpg") {
       NSWorkspace.shared.open(url)
     }
   }
