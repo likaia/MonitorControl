@@ -3,6 +3,8 @@
 import Cocoa
 
 class OSDUtils: NSObject {
+  static let brightnessHUDController = BrightnessHUDController.shared
+
   enum OSDImage: Int64 {
     case brightness = 1
     case audioSpeaker = 3
@@ -22,6 +24,11 @@ class OSDUtils: NSObject {
   }
 
   static func showOsd(displayID: CGDirectDisplayID, command: Command, value: Float, maxValue: Float = 1, roundChiclet: Bool = false, lock: Bool = false) {
+    if command == .brightness, Self.shouldUseCustomBrightnessHUD {
+      self.brightnessHUDController.show(displayID: displayID, value: value, maxValue: maxValue)
+      return
+    }
+
     guard let manager = OSDManager.sharedManager() as? OSDManager else {
       return
     }
@@ -37,6 +44,10 @@ class OSDUtils: NSObject {
       totalChiclets = Int(maxValue * 100)
     }
     manager.showImage(osdImage.rawValue, onDisplayID: displayID, priority: 0x1F4, msecUntilFade: 1000, filledChiclets: UInt32(filledChiclets), totalChiclets: UInt32(totalChiclets), locked: lock)
+  }
+
+  static var shouldUseCustomBrightnessHUD: Bool {
+    ProcessInfo.processInfo.operatingSystemVersion.majorVersion >= 26
   }
 
   static func showOsdVolumeDisabled(displayID: CGDirectDisplayID) {
