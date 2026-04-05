@@ -4,16 +4,16 @@
 <h3>MonitorControl</h3>
 <p>Controls your external display brightness and volume and shows native OSD.
 Use menubar extra sliders or the keyboard, including native Apple keys!</p>
-<a href="https://github.com/MonitorControl/MonitorControl/releases"><img src=".github/macos_badge_noborder.png" width="175" alt="Download for macOS"/></a>
+<a href="https://github.com/likaia/MonitorControl/releases"><img src=".github/macos_badge_noborder.png" width="175" alt="Download for macOS"/></a>
 </div>
 
 <br/><br/>
 
 <div align="center">
-<a href="https://github.com/MonitorControl/MonitorControl/releases"><img src="https://img.shields.io/github/downloads/MonitorControl/MonitorControl/total.svg?style=flat" alt="downloads"/></a>
-<a href="https://github.com/MonitorControl/MonitorControl/releases"><img src="https://img.shields.io/github/release-pre/MonitorControl/MonitorControl.svg?style=flat" alt="latest version"/></a>
-<a href="https://github.com/MonitorControl/MonitorControl/blob/master/License.txt"><img src="https://img.shields.io/github/license/MonitorControl/MonitorControl.svg?style=flat" alt="license"/></a>
-<a href="https://github.com/MonitorControl/MonitorControl"><img src="https://img.shields.io/badge/platform-macOS-blue.svg?style=flat" alt="platform"/></a>
+<a href="https://github.com/likaia/MonitorControl/releases"><img src="https://img.shields.io/github/downloads/likaia/MonitorControl/total.svg?style=flat" alt="downloads"/></a>
+<a href="https://github.com/likaia/MonitorControl/releases"><img src="https://img.shields.io/github/release-pre/likaia/MonitorControl.svg?style=flat" alt="latest version"/></a>
+<a href="https://github.com/likaia/MonitorControl/blob/master/License.txt"><img src="https://img.shields.io/github/license/likaia/MonitorControl.svg?style=flat" alt="license"/></a>
+<a href="https://github.com/likaia/MonitorControl"><img src="https://img.shields.io/badge/platform-macOS-blue.svg?style=flat" alt="platform"/></a>
 
 <br/>
 <br/>
@@ -25,11 +25,11 @@ Use menubar extra sliders or the keyboard, including native Apple keys!</p>
 <hr>
 
 > [!WARNING]
-> MonitorControl v4.2.0 [may crash](https://github.com/MonitorControl/MonitorControl/issues/1663) on certain configurations running macOS 15 Sequoia or Tahoe. Additionally, this version will not automatically update to the [latest app version](https://github.com/MonitorControl/MonitorControl/releases). To resolve the issue and ensure future updates, please upgrade manually.
+> MonitorControl v4.2.0 [may crash](https://github.com/likaia/MonitorControl/issues/1663) on certain configurations running macOS 15 Sequoia or Tahoe. Additionally, this version will not automatically update to the [latest app version](https://github.com/likaia/MonitorControl/releases). To resolve the issue and ensure future updates, please upgrade manually.
 
 ## Download
 
-Go to [Releases](https://github.com/MonitorControl/MonitorControl/releases) and download the latest `.dmg`, or you can install via Homebrew:
+Go to [Releases](https://github.com/likaia/MonitorControl/releases) and download the latest `.dmg`, or you can install via Homebrew:
 ```shell
 brew install --cask monitorcontrol
 ```
@@ -62,14 +62,14 @@ For additional features, more advanced brightness control with XDR/HDR brightnes
 
 ## How to install and use the app
 
-1. [Download the app](https://github.com/MonitorControl/MonitorControl/releases)
+1. [Download the app](https://github.com/likaia/MonitorControl/releases)
 2. Copy the MonitorControl app file from the .dmg file to your Applications folder
 3. Click on the `MonitorControl` app
 4. Add the app to `Accessibility` under `System Settings` » `Privacy & Security` as prompted (this is required only if you wish to use the native Apple keyboard brightness and media keys - if this is not the case, you can safely skip this step).
 5. Use your keyboard or the sliders in the app menu (a brightness symbol in the macOS menubar as shown on the screenshot above) to control your displays.
 6. Open `Settings…` for customization options (enable `Show advanced settings` for even more options).
 7. You can set up custom keyboard shortcuts under the `Keyboard` in Settings (the app uses Apple media keys by default).
-8. If you have any questions, go to [Discussions](https://github.com/MonitorControl/MonitorControl/discussions)!
+8. If you have any questions, go to [Discussions](https://github.com/likaia/MonitorControl/discussions)!
 
 ### macOS compatibility
 
@@ -81,7 +81,7 @@ For additional features, more advanced brightness control with XDR/HDR brightnes
 
 _* With some limitations - full functionality available on macOS 11 Big Sur or newer._
 
-For macOS Sequoia and Tahoe 26 compatibility [v4.3.3 or newer](https://github.com/MonitorControl/MonitorControl/releases) is required!
+For macOS Sequoia and Tahoe 26 compatibility [v4.3.3 or newer](https://github.com/likaia/MonitorControl/releases) is required!
 
 Please note that current versions have limited native macOS OSD support on macOS Tahoe - although the Control Center brightness or volume OSD appears, the OSD percentage value will not show or update.
 
@@ -116,7 +116,7 @@ Notable exceptions for hardware control compatibility:
 - Clone the project via this Terminal command:
 
 ```sh
-git clone https://github.com/MonitorControl/MonitorControl.git
+git clone https://github.com/likaia/MonitorControl.git
 ```
 
 - If you want to clone one of the branches, add `--single-branch --branch [branchname]` after the `clone` option.
@@ -124,7 +124,7 @@ git clone https://github.com/MonitorControl/MonitorControl.git
 
 ### Third party dependencies
 
-- [MediaKeyTap](https://github.com/MonitorControl/MediaKeyTap)
+- [MediaKeyTap](https://github.com/likaia/MediaKeyTap)
 - [Settings](https://github.com/sindresorhus/Settings)
 - [SimplyCoreAudio](https://github.com/rnine/SimplyCoreAudio)
 - [KeyboardShortcuts](https://github.com/sindresorhus/KeyboardShortcuts)

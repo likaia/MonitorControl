@@ -42,7 +42,7 @@ class AboutPrefsViewController: NSViewController, SettingsPane {
   }
 
   @IBAction func openContributorsPage(_: NSButton) {
-    if let url = URL(string: "https://github.com/MonitorControl/MonitorControl/graphs/contributors") {
+    if let url = URL(string: "https://github.com/likaia/MonitorControl/graphs/contributors") {
       NSWorkspace.shared.open(url)
     }
   }

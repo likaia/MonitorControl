@@ -13,7 +13,7 @@
     {
       "identity" : "mediakeytap",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/MonitorControl/MediaKeyTap",
+      "location" : "https://github.com/likaia/MediaKeyTap",
       "state" : {
         "branch" : "master",
         "revision" : "22293b608bb9e7072960a2002d77ebbbdb3ba859"

@@ -1041,7 +1041,7 @@
 		};
 		6CD35F5426500008001F1344 /* XCRemoteSwiftPackageReference "MediaKeyTap" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MonitorControl/MediaKeyTap";
+			repositoryURL = "https://github.com/likaia/MediaKeyTap";
 			requirement = {
 				branch = master;
 				kind = branch;
